@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="447.0" prefWidth="721.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.patient.HomeController">
+   <children>
+      <Button fx:id="txtButtonAddRv" layoutX="128.0" layoutY="101.0" mnemonicParsing="false" onAction="#handleAddRv" prefHeight="30.0" prefWidth="192.0" style="-fx-background-color: #77370D;" text="Demander rv" textFill="WHITE">
+         <font>
+            <Font name="System Bold Italic" size="14.0" />
+         </font>
+      </Button>
+      <Button layoutX="375.0" layoutY="101.0" mnemonicParsing="false" onAction="#handleShowRv" prefHeight="30.0" prefWidth="192.0" style="-fx-background-color: #77370D;" text="Afficher mes rv" textFill="WHITE">
+         <font>
+            <Font name="System Bold Italic" size="14.0" />
+         </font>
+      </Button>
+      <Button layoutX="128.0" layoutY="145.0" mnemonicParsing="false" onAction="#handleShowCons" prefHeight="30.0" prefWidth="192.0" style="-fx-background-color: #77370D;" text="afficher mes consultations" textFill="WHITE">
+         <font>
+            <Font name="System Bold Italic" size="14.0" />
+         </font>
+      </Button>
+      <Button layoutX="375.0" layoutY="153.0" mnemonicParsing="false" onAction="#handleShowPrest" prefHeight="30.0" prefWidth="192.0" style="-fx-background-color: #77370D;" text="Afficher mes prestations" textFill="WHITE">
+         <font>
+            <Font name="System Bold Italic" size="14.0" />
+         </font>
+      </Button>
+      <Text fx:id="txtInfoUserConnect" layoutX="320.0" layoutY="46.0" strokeType="OUTSIDE" strokeWidth="0.0" text="infos user">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Text>
+   </children>
+</AnchorPane>
