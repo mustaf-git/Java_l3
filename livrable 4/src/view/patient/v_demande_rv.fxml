@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="393.0" prefWidth="590.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.patient.Demande_rvController">
+   <children>
+      <Text fx:id="txtError" fill="#d70b0b" layoutX="205.0" layoutY="77.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Tous les champs sont obligatoires" />
+      <TextField fx:id="txtfDate" layoutX="63.0" layoutY="127.0" prefHeight="25.0" prefWidth="173.0" promptText="date" />
+      <TextField fx:id="txtfHeure" layoutX="63.0" layoutY="197.0" prefHeight="25.0" prefWidth="173.0" promptText="heure" />
+      <ComboBox fx:id="cboTypeRv" layoutX="343.0" layoutY="127.0" onMouseClicked="#handleChangerTypeRv" prefHeight="25.0" prefWidth="173.0" promptText="type Rendez-Vous" />
+      <ComboBox fx:id="cboChoixPrestation" layoutX="343.0" layoutY="197.0" onMouseClicked="#handleChangerTypePrestation" prefHeight="25.0" prefWidth="173.0" promptText="prestation disponible" />
+      <Button layoutX="260.0" layoutY="279.0" mnemonicParsing="false" onAction="#handleDemanderRv" text="demander" />
+      <Button fx:id="txtfConfirmerDemandeRv" layoutX="490.0" layoutY="325.0" mnemonicParsing="false" onAction="#handleConfirmerDemandeRv" text="confirmez" />
+      <Text fx:id="txtErrorPrestation" fill="#da0e0e" layoutX="349.0" layoutY="246.0" strokeType="OUTSIDE" strokeWidth="0.0" text="merci de choisir la prestation" wrappingWidth="161.13671875" />
+      <Button layoutX="98.0" layoutY="325.0" mnemonicParsing="false" onAction="#handleClearDemandeRv" text="annuler" />
+   </children>
+</AnchorPane>

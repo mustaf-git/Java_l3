@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.patient.Lister_prestationController">
+   <children>
+      <TableView fx:id="tblvPres" layoutX="49.0" layoutY="39.0" prefHeight="320.0" prefWidth="474.0">
+        <columns>
+            <TableColumn fx:id="tblcIdPres" prefWidth="91.0" text="id prestation" />
+          <TableColumn fx:id="tblcPresDate" prefWidth="103.0" text="date" />
+          <TableColumn fx:id="tblcPresHeure" prefWidth="76.0" text="heure" />
+            <TableColumn fx:id="tblcLibPres" prefWidth="160.0" text="libelle prestation" />
+        </columns>
+         <columnResizePolicy>
+            <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+         </columnResizePolicy>
+      </TableView>
+   </children>
+</AnchorPane>
